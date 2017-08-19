@@ -5,6 +5,14 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
+.social-links:hover{
+	color: #ffffff !important;
+}
+
+.social-links{
+	font-size: 2em;
+	padding: 8px;
+} 
 
 body {
   background-color: #f2f2f2;
@@ -35,6 +43,9 @@ p {
     text-align: center;
 }
 
+.parag{
+	text-align: justify;
+}
 /* Links */
 a {
     color: #f85c37;
