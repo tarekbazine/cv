@@ -468,15 +468,85 @@
                     <br>
                     <script>
                     var doughnutData = [{
-                            value: 50,
+                            value: 55,
                             color: "#1abc9c"
                         },
                         {
-                            value: 50,
+                            value: 45,
                             color: "#ecf0f1"
                         }
                     ];
                     var myDoughnut = new Chart(document.getElementById("net").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-3 col-sm-6 centered">
+                    <canvas id="node" height="100" width="100"></canvas>
+                    <p>NodeJs</p>
+                    <br>
+                    <script>
+                        var doughnutData = [{
+                            value: 62,
+                            color: "#1abc9c"
+                        },
+                            {
+                                value: 38,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("node").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-2 col-sm-6 centered">
+                    <canvas id="react" height="100" width="100"></canvas>
+                    <p>React</p>
+                    <br>
+                    <script>
+                        var doughnutData = [{
+                            value: 60,
+                            color: "#1abc9c"
+                        },
+                            {
+                                value: 40,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("react").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-2 col-sm-6 centered">
+                    <canvas id="rn" height="100" width="100"></canvas>
+                    <p>React Native</p>
+                    <br>
+                    <script>
+                        var doughnutData = [{
+                            value: 75,
+                            color: "#1abc9c"
+                        },
+                            {
+                                value: 25,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("rn").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-2 col-sm-6 centered">
+                    <canvas id="kotlin" height="100" width="100"></canvas>
+                    <p>Kotlin</p>
+                    <br>
+                    <script>
+                        var doughnutData = [{
+                            value: 50,
+                            color: "#1abc9c"
+                        },
+                            {
+                                value: 50,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("kotlin").getContext("2d")).Doughnut(doughnutData);
                     </script>
                 </div>
             </div>
