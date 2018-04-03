@@ -589,7 +589,7 @@ It’s a web based application but with phpDesktop I transferred it to a desktop
             <div class="col-lg-3">
                 <p>DzHealth</p>
                 <p class="parag">
-                    <more>A prototype for a governmental health-care solution project, we build a web application and android one in Service Oriented Architecture. 
+                    <more>A prototype for a simulation of a governmental health-care solution in one of my third modules in the university, we build a prototype for web application and android one in Service Oriented Architecture.
                         <br/>
                         <br/>
                         <sm><i class="icon-tag"></i> Android</sm>&nbsp;
@@ -638,6 +638,23 @@ It’s a web based application but with phpDesktop I transferred it to a desktop
                         <sm><i class="icon-tag"></i> git</sm>&nbsp;
                         <sm><i class="icon-tag"></i> teamWork</sm>&nbsp;
                         <sm><i class="icon-tag"></i> project deployment</sm>&nbsp;
+                    </more>
+                </p>
+            </div>
+            <div class="col-lg-7 col-lg-offset-2">
+                <p id="arm-change"><img id="img-arm-change" style="height: 520px" class="img-responsive" src="assets/img/port05.jpg" alt=""></p>
+            </div>
+            <div class="col-lg-3">
+                <p>Robotic Chess-arm</p>
+                <p class="parag">
+                    <more>
+                        A robotic arm that can move the peaces of a chess board with commands, here is <a href="assets/chess_arm_report.pdf">a report that illustrate the work (in french)</a>.
+                        <br/>
+                        <br/>
+                        <sm><i class="icon-tag"></i> Arduino</sm>&nbsp;
+                        <sm><i class="icon-tag"></i> Python</sm>&nbsp;
+                        <sm><i class="icon-tag"></i> Electronics</sm>&nbsp;
+                        <sm><i class="icon-tag"></i> Mechanics</sm>&nbsp;
                     </more>
                 </p>
             </div>
@@ -703,6 +720,19 @@ It’s a web based application but with phpDesktop I transferred it to a desktop
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
     <script>
+        //switch between the images of the arm project
+        var imgArm = $('#img-arm-change');
+        $('#arm-change').hover(function () {
+            console.log('dddd')
+           imgArm.attr('src','assets/img/port05_2.jpg');
+        },function () {
+            console.log('dddd22')
+            imgArm.attr('src','assets/img/port05.jpg');
+
+            imgArm.src = 'assets/img/port05.jpg';
+        });
+
+
         var scroll = new SmoothScroll('a[href*="#"]',{
             header: '#section-topbar', // Selector for fixed headers (must be a valid CSS selector)
             easing: 'easeInOutCubic', // Easing pattern to use
